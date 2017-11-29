@@ -1,0 +1,31 @@
+[
+  {
+    "storeId": "101",
+    "storeName": "Store101",
+    "storeAddress": "fff"
+
+  },
+  {
+    "storeId": "102",
+    "storeName": "Store102",
+    "storeAddress": "xyz"
+
+  },
+  {
+    "storeId": "103",
+    "storeName": "Store103",
+    "storeAddress": "abc"
+
+  },
+  {
+    "storeId": "104",
+    "storeName": "Store104",
+    "storeAddress": ""
+
+  }{
+    "storeId": "105",
+    "storeName": "Store104",
+    "storeAddress": ""
+
+  }
+]

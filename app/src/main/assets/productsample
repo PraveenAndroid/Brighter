@@ -1,0 +1,198 @@
+[
+  {
+    "productId": "p101",
+    "productName": "Apple iPhone 8 Plus (Space Grey, 64 GB)",
+    "productDescription": "An all-new glass design, an updated camera, and a powerful chip, there’s so much to love about the iPhone 8 Plus. This iPhone brings you an augmented reality experience that’s more immersive than before.",
+    "productImage": "iphone8.png",
+    "productSalePrice": 90000,
+    "productRegularPrice": 100000,
+    "productColors": [
+
+      {
+        "colorId": "101",
+        "colorName": "Red"
+
+       },
+       {
+         "colorId": "101",
+         "colorName": "Blue"
+
+        },
+        {
+         "colorId": "101",
+         "colorName": "Green"
+
+        }
+    ],
+    "productStores": [
+      {
+        "storeId": "1001",
+        "storeName": "Apple Lenox Square",
+        "storeAddress": "3393 Peachtree Road NE ,Atlanta, GA 30326 (404) 926-3085"
+      },
+      {
+        "storeId": "1002",
+        "storeName": "Apple Cumberland Mall",
+        "storeAddress": "1000 Cumberland Mall Atlanta, GA 30339 (678) 402-0725"
+      },
+      {
+        "storeId": "1003",
+        "storeName": "Apple Store Lenox Square",
+        "storeAddress": "3393 Peachtree Road NE Atlanta, GA 30326"
+      }
+    ]
+  },
+  {
+    "productId": "p102",
+    "productName": "Apple MacBook Air Core i5 5th Gen",
+    "productDescription": "Absolutely loving to own a MacBook Air. A decent purchase although the delivery was pathetic which isn't improving for some cities like mine from past 6 years of my experience with Flipkart.",
+    "productImage": "macbookair.png",
+    "productSalePrice": 54000,
+    "productRegularPrice": 70000,
+    "productColors": [
+
+          {
+            "colorId": "101",
+            "colorName": "Red"
+
+           },
+           {
+             "colorId": "101",
+             "colorName": "Blue"
+
+            },
+            {
+             "colorId": "101",
+             "colorName": "Green"
+
+            }
+        ],
+    "productStores": [
+      {
+        "storeId": "2001",
+        "storeName": "Apple Lenox Square",
+                "storeAddress": "3393 Peachtree Road NE Atlanta, GA 30326 (404) 926-3085"
+      },
+
+      {
+        "storeId": "2002",
+        "storeName": "Apple Store Lenox Square",
+                "storeAddress": "3393 Peachtree Road NE Atlanta, GA 30326"
+      }
+    ]
+  },
+  {
+      "productId": "p103",
+      "productName": "Google Pixel (Very Silver, 32 GB)",
+      "productDescription": "Handset, USB-C 18 W Adapter with USB-PD, USB-C to USB-C Cable, USB-C to USB Standard-A Plug Cable, SIM Tool, Headphones with Rubber Earbuds, OTG Dongle, Safety and Warranty Information",
+      "productImage": "pixel.png",
+      "productSalePrice": 34999,
+      "productRegularPrice": 57000,
+      "productColors": [
+
+            {
+              "colorId": "101",
+              "colorName": "Red"
+
+             },
+             {
+               "colorId": "101",
+               "colorName": "Blue"
+
+              },
+              {
+               "colorId": "101",
+               "colorName": "Green"
+
+              }
+          ],
+      "productStores": [
+        {
+          "storeId": "3001",
+          "storeName": "Apple Cumberland Mall",
+          "storeAddress": "1000 Cumberland Mall Atlanta, GA 30339 (678) 402-0725"
+        },
+        {
+        "storeId": "3002",
+        "storeName": "Apple Store Lenox Square",
+        "storeAddress": "3393 Peachtree Road NE Atlanta, GA 30326"
+                                 }
+      ]
+    },{
+          "productId": "p104",
+          "productName": "Canon EOS 750D Body with Single Lens",
+          "productDescription": "Meet the Canon EOS 750D - the DSLR that’s crafted to enhance your photographic skills. Lightweight yet functional, this user-friendly DSLR camera lets you explore your creativity.",
+          "productImage": "camera.png",
+          "productSalePrice": 46990,
+          "productRegularPrice": 54000,
+          "productColors": [
+
+                {
+                  "colorId": "101",
+                  "colorName": "Red"
+
+                 },
+                 {
+                   "colorId": "101",
+                   "colorName": "Blue"
+
+                  },
+                  {
+                   "colorId": "101",
+                   "colorName": "Green"
+
+                  }
+              ],
+          "productStores": [
+            {
+              "storeId": "4001",
+              "storeName": "Apple Cumberland Mall",
+              "storeAddress": "1000 Cumberland Mall Atlanta, GA 30339 (678) 402-0725"
+            },
+
+            {
+              "storeId": "4002",
+              "storeName": "Apple Store Lenox Square",
+               "storeAddress": "3393 Peachtree Road NE Atlanta, GA 30326"
+            }
+          ]
+        },{
+              "productId": "p105",
+              "productName": "Lenovo K8 Plus (Venom Black, 32 GB)",
+              "productDescription": "The Lenovo K8 Plus boasts of a dual rear camera setup, the sort that you usually find on more expensive devices. The secondary camera is used to gauge depth",
+              "productImage": "lenovo.jpeg",
+              "productSalePrice": 9999,
+              "productRegularPrice": 12000,
+              "productColors": [
+
+                    {
+                      "colorId": "101",
+                      "colorName": "Red"
+
+                     },
+                     {
+                       "colorId": "101",
+                       "colorName": "Blue"
+
+                      },
+                      {
+                       "colorId": "101",
+                       "colorName": "Green"
+
+                      }
+                  ],
+              "productStores": [
+                {
+                  "storeId": "5001",
+                  "storeName": "Apple Cumberland Mall",
+                  "storeAddress": "1000 Cumberland Mall Atlanta, GA 30339 (678) 402-0725"
+                },
+
+                {
+                  "storeId": "5002",
+                  "storeName": "Apple Store Lenox Square",
+                  "storeAddress": "3393 Peachtree Road NE  Atlanta, GA 30326"
+                }
+              ]
+      }
+]

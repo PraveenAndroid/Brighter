@@ -1,0 +1,149 @@
+Number of Third Party Library Used :
+
+1. Butter Knife:
+
+        Field and method binding for Android views which uses annotation processing to generate boilerplate code for you.
+        ButterKnife only uses one line to populate a View field,
+        whereas normally you'd have to use two. Multiply that by all of your View fields,
+        and it starts to add up!So some boilerplate is removed and less code has to be written
+
+  Just add below depenendency in gradle file
+
+      dependencies {
+
+        compile 'com.jakewharton:butterknife:8.8.1'
+        annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+      }
+
+      Now in View Class Add Codd below.
+
+      class ExampleActivity extends Activity {
+        @BindView(R.id.user) EditText username;
+        @BindView(R.id.pass) EditText password;
+
+        @BindString(R.string.login_error) String loginErrorMessage;
+
+        @OnClick(R.id.submit) void submit() {
+
+        }
+
+        @Override public void onCreate(Bundle savedInstanceState) {
+          super.onCreate(savedInstanceState);
+          setContentView(R.layout.simple_activity);
+          ButterKnife.bind(this);
+
+        }
+      }
+
+
+
+2.Realm Database:
+
+    Realm realm = Realm.getDefaultInstance();
+
+    // All writes are wrapped in a transaction
+    // to facilitate safe multi threading
+    realm.beginTransaction();
+
+    // Add a person
+    Person person = realm.createObject(Person.class);
+    person.setName("Young Person");
+    person.setAge(14);
+
+    realm.commitTransaction();
+
+    RealmResults<User> result = realm.where(User.class)
+                                     .greaterThan("age", 10)  // implicit AND
+                                     .beginGroup()
+                                          .equalTo("name", "Peter")
+                                          .or()
+                                          .contains("name", "Jo")
+                                     .endGroup()
+                                     .findAll();
+
+      Advantage:The use of Realm Database instead of Core Sqlite data has many advantage
+      . It is very fast as compared to Core SqlDatabase
+        It is easy to use
+        Create and use od database is very easy and much faster
+
+
+
+3. GSON:
+
+        Gson is a Java library that can be used to convert a Java object into its JSON representation.
+        Provide simple toJson() and fromJson() methods to convert Java objects to JSON and vice-versa
+        Allow pre-existing unmodifiable objects to be converted to and from JSON
+        Extensive support of Java Generics
+        Allow custom representations for objects
+        Support arbitrarily complex objects (with deep inheritance hierarchies and extensive use of generic types)
+
+        To use Gson in Android
+
+
+        dependencies {
+            compile 'com.google.code.gson:gson:2.8.2'
+        }
+
+
+        Gson gson = new Gson();
+        Collection<Integer> ints = Lists.immutableList(1,2,3,4,5);
+
+        (Serialization)
+
+        String json = gson.toJson(ints); ==> json is [1,2,3,4,5]
+
+        (Deserialization)
+
+        Type collectionType = new TypeToken<Collection<Integer>>(){}.getType();
+        Collection<Integer> ints2 = gson.fromJson(json, collectionType);
+
+
+4. Glide:
+
+   Glide supports fetching, decoding, and displaying video stills, images, and animated GIFs. Glide includes a flexible API that allows developers to plug in to almost any network stack.
+
+
+ Add these file in gradle:
+
+       repositories {
+         mavenCentral()
+         maven { url 'https://maven.google.com' }
+       }
+
+       dependencies {
+
+         compile 'com.github.bumptech.glide:glide:4.3.1'
+         annotationProcessor 'com.github.bumptech.glide:compiler:4.3.1'
+       }
+
+  Now in View Class
+
+  // For a simple view:
+  @Override public void onCreate(Bundle savedInstanceState) {
+    ...
+    ImageView imageView = (ImageView) findViewById(R.id.my_image_view);
+
+    GlideApp.with(this).load("http://goo.gl/gEgYUd").into(imageView);
+  }
+
+  // For a simple image list:
+
+      @Override public View getView(int position, View recycled, ViewGroup container) {
+        final ImageView myImageView;
+        if (recycled == null) {
+          myImageView = (ImageView) inflater.inflate(R.layout.my_image_view, container, false);
+        } else {
+          myImageView = (ImageView) recycled;
+        }
+
+        String url = myUrls.get(position);
+
+        GlideApp
+          .with(myFragment)
+          .load(url)
+          .centerCrop()
+          .placeholder(R.drawable.loading_spinner)
+          .into(myImageView);
+
+        return myImageView;
+      }

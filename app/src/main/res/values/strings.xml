@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Brighter Brain</string>
+    <string name="Rs">\u20B9</string>
+    <string name="regular_price">Reg Price </string>
+    <string name="sale_price">Sale Price </string>
+
+
+</resources>
